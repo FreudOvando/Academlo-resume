@@ -27,9 +27,9 @@
      <a class="anchor_navbar" href="#"><img class="img_navbar_logo" src="./assets/img/nav__icon.PNG" alt="logo-image"></a>
 <div class="navbar__menu">
   <ul class="navbar__list">
-    <li class="navbar__item">
+    <!-- <li class="navbar__item">
       <a class="navbar__link active" href="#home">Inicio</a>
-    </li>
+    </li> -->
     <li class="navbar__item">
       <a class="navbar__link" href="#about">Acerca de Mí</a>
     </li>
@@ -46,7 +46,6 @@
 </div>
 
 <div class="controls">
-  <p class="control_text">⚪darkMode⚫</p>
   <div class="nav-controls">
     <label class="switch">
         <input id="input-dark-mode" type="checkbox">
@@ -67,55 +66,104 @@
       <img class="programs__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAb9JREFUSEvV1UuoT1EUx/HPVWREMaKkSBSSV3mUR16FFEWUQgZKKWXCgPJIUZgYGMhjQCEmRCFJSRgoosRAwpCkGIicVevqOjl3n/51k11nsvdvre9er3269PHq6mP//gngKSZ2GFnYTupp+7cIbmNBh4CwXVQCnMe6DgHnsL4EOIbtKVqFTwXYkCqll1NzFDtKgF04mKIJeF4AhOZZanbiUAmwCadSNB93cQRTG0CDMDnPNuJsCbC8cnY1RWtxARerSFa3qMtS3CgBpuNRirbhOMZiWAMgwFvzbAqelAAj8SZFB7C7cPOoV9Qt1gi8KwEG4luK3ldt97oBcBjXcRKbUzMA30uAOP+MKN5DRGfMwd4aaEXW6hqW4SOG1i/T9BbFrUcnYAaim+7UjGM/LvAY06rhfIlxbQH3MSvTMyaNxmN2VZMfeIAXuf82c38Pc9sCrmAlvmZ+w/hDzXh4NSPzcAb9camCrmkLOIEtNfErBCiczUR3ZN2yaOdo6z9WUw32tWjPuq892N8WMAobqlwvQQxev4ZW/ZlDeROne8zPb3mbP9pgLMTifOujyLfyi/f/S2+D2AZQGOTej/9/wC+swE0ZUpiktgAAAABJRU5ErkJggg=="/>
       <img class="programs__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcZJREFUSEvF1UvITWEUxvHfFzGQKDOlzCQGKBlIFKHkkoHMRDJzSULJTAkpXxgpmUkGcokiuYwM5JKSqTATCROX2KsWbbuzz7udOn1vncHZ73rW/33W+5x9Rgx5jQy5vzEBnMHcAZ29wM66tpeDa1g7ICC060uAc9g+ICC0O0qAIziURafwqQCbgj1ZE9rDJcAujGbRPDwvAObjSdaE9nQJsAmXsuhZHwexFydfjVtZH9rLJcAy3OtwB1ewEVtxPutD+6AEmI2XDcCrmqs/W09xFQdxNB+GNmr/rl4xnYb3DcDDytXSFlcRhN25F9oPJUBAv2F8rfArHjcAx3ETF6tTb66S971yMhG/SoDYf4fp1Y8mxrAXiytgRLC+1uF63lfM/i1mNF22vYuicUQ0khIxXIIYU30tTFcx81l5mAVdARG7iN9rzEzRnHTyo9p7VAvCR0zNca3pCriALYhmZ3ED9/N79JiA5ZXDDbVXQ2gisv+sthEdw/5G7eeceVx+nHRSj0s/0BWwr2pwoiWWbY9Dc7IrINKwDSur18AijGvp+jPv407+mt90BdTrJmMFViUwmt7Oz1186ed0TP4y/3P0/cuH7uA3NCNTGc7pG8UAAAAASUVORK5CYII="/>
       <img class="programs__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEvt1b8rhXEUx/HXTbFZ5McgA4pFiQys/AWUzXAzKIOymGwGmxJSSjYbf4LVYDdaTBhkEIsf3299Hz3R7f6+Ge53eYbvc87nvD/nPOcpaPIpNDm/lgt8NYjop/DfBG2BzOG2RWVn7f9atIQBHOENW7jFJDYxmNhqJujDCK6xhhOM4hELuKhXoDcljAJTuMMTngNVvMsqr5kgL7CBA8wEgnWsoKNegrxFn9jFfqKYxhW6cyR/tmm5XdSP4dSDbFY/Uj9OQ/K91OyKLYrBx5jFeLCkB/M4wyrm0iRdhmlaDhbtYLsagheM4SH3aR2m5NGSOKLZ6cJNmKSJagRi8D3O8Y4hFFPG10QXn51YTMXE64otKrsTSrxQUqDWhCXjWv5PbjjBN42gOxnLfKPpAAAAAElFTkSuQmCC"/>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfJJREFUSEu11Tvoj2EUwPHPvygDJYkwuKRIBpTN3SgDWQxkEhaXicFisEiRsooMRgOZlNsqJfdcCyGXQQYTv6Pz1uPx/t7f76f+Z3l7n+c553tuz3nGjLOMjbN9owBm4BJ+YCe+DePcsIDZuIP5afQh1uHzIMiwgL04Wxl7jPX42AUZBFiG09iM3ThRGXuJNXjXD9IFWN7z8Cam9AB3sRGbsAo7MDmNBmQt3rZB+gFW4DqmFkqncDD/j+NIsRfGAxKwv6QNEMZvpOfl4cvYil/YhXOVrfdZk2fleg1o87w8vwdXs7DHcLiCfMAGRAP8kRJQ5rxfzQ6l8n5sScCcjGhCKn3JFn5QA15h3oC+bgDXcDGLHSqxfrLQfYIlkc4yghdYMALgdrZoqMTNPl/oPsLSGhA9H50zrQMSXRTeRQQhZ3qFv4+ox6xc+5rFjvV/ZlFQAxJzp032IVLZAOoznzL/rUVuDi/OC1ZD7vU6aCUmJWB1ZT2Mx61+2tWmzd7ChMSQayRGxoH8iZQcLfbiDsRFe16H1DUq5iYkviE/sQ3fcaUYFXGLI5rXbTkdNOyix291dNeb9Dy+rTIIEEozM5JFlYWBk7Sti/o5Mj0fnAYShYycd74FowDibEAuYGKvU7YP85qNCugXXef6MDX4L8ON0m876l4ZMv3YtwAAAABJRU5ErkJggg=="/>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASpJREFUSEvt1L0vBFEUxuFnSURHJBI0eomOntJHgUanF9uioNRIRCdq/wCNj0po0dMqNCQK0YgCc2U2mUxm3InNhmKnm5lzznvPe3/n1LT4qbW4vrZA1OF/YdEgtjCJYbzgBpfYxsdPbcQ66MUdBkqKnGEBb2UiMYFdzOOIb+KW0Jcrdo1pPGe+z+AkvMcE6tjDZ5rcnyaO50RC8QO8YxS3WKsiUNR5F0JnKyW2PGAEr78VaNSdSO5nEbMYwj0usIHHRlDeojJizrETI6aoo6xA08TEBIKvczhEZwkxV8kMBEKyxASLjqtguoz9TGAg5jRJHosQE+ZktYpAUUx32tFUFWJiFpUdogPryWoI1AT+e1JiwsVv4qmZVRHdlrGA2CTH8qP/2wJ/b9EXcl41GRaRcnkAAAAASUVORK5CYII="/>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjBJREFUSEu11UnIjlEUB/DfJ7IhCyRZosxFslCKKGFjKEOKEjKlJGOJZAglkiHsCCXDhh0LC5SIjEWysDAkC1KIPOfrvnW/53uHx+I7m/e99/7P/Z9z7jn/p00XW1sX368VQQ/MxgyMxlDafd7hCW4W+1fwu1GgzQim4SSGtMjyLVbiVj1cI4It2J+irVLFv9iKQ2VwPYLNOFDl1jqYDTiS75cJpqRUYz/quwyrsQPd8CbVezgi6n04gWOYl/Ym4W6NJCfoiecYnA53Y2f6H+/wEd/SuhcG4nVab8fe9P8FxhRB/Yl1TrAAl7L0ItVIuYodxKYMOCtVoAPB+SKixRloIu5VuT1F/DgL+DjWlTOI8ozI0hxZ8fIa7CHGpcWDIoMJZYJP6J8A14tBmvOfBBewKPl8Qb8ywYdisAYkwG1M/U+CG5iZfL6jd5ngEcYmQHRL32YSUCIPSfmMPmn/FaKVOzzyGSzPHFfgbMUsAns6w57DkjJB1PwqviJSjD6P8Q89+tGAKOZhbRq4GMSazcflMkHMRHTSoKI9p2MVluJX6umF+JluiJJcS7juJfKXGJWmupNcz03y+x7j0+BNTlmsKV10EUFatqhEdGG71RO7o1if9GdPkzfYlUlJDXa4kJONuU8juQ5xCy26U4jYUzzDqRJZnAeuZqHCleS65hCqGHoU0xnyHQ+eWyjpNtxPmhW/nazVJzPO45MZMh2Z5DYs9Xo8dkNrRdDMt9JZlxP8A6W4YxlKv0WFAAAAAElFTkSuQmCC"/>
     </div>
   </section>
 <br><br>
-  <section class="skills">
-    
+  
+<section class="skills">  
       <div class="skill">
-        <h3 class="title__skill">Competitivo</h3>
+        <h3 class="tittle__skill">Competitivo</h3>
         <p class="text__skills">Me gustan los retos, no me rindo y me gusta superarme constantemente.</p>
       </div>
       <div class="skill">
-        <h3 class="title__skill">Logrador</h3>
+        <h3 class="tittle__skill">Logrador</h3>
         <p class="text__skills">siento la necesidad constante de lograr objetivos, hay un fuego interno que me empuja a hacer más, a lograr más.</p>
       </div>
       <div class="skill">
-        <h3 class="title__skill">Aprendedor</h3>
+        <h3 class="tittle__skill">Aprendedor</h3>
         <p class="text__skills">Me encanta aprender. El tema que más me interese será objetivo a lograr, siempre atraído por el proceso de aprender cosas nuevas.</p>
       </div>
       <div class="skill">
-        <h3 class="title__skill">Trabajo en equipo</h3>
-        <p class="text__skills">Congrandes habilidades de comunicacion y liderazgo</p>
+        <h3 class="tittle__skill">Trabajo en equipo</h3>
+        <p class="text__skills">tengo grandes habilidades de comunicacion y liderazgo</p>
       </div>
       <div class="skill">
-        <h3 class="title__skill">Trabajador</h3>
-        <p class="text__skills">siempre dispuesto a dar lo mejor de mi</p>
+        <h3 class="tittle__skill">Trabajador</h3>
+        <p class="text__skills">siempres dispuesto a dar lo mejor de mi</p>
       </div>
-    
-    
-
-<!-- <h3 class="tittle__skill">Competitivo</h3>
-<p class="text__skills">Me gustan los retos, no me rindo y me gusta superarme constantemente.</p>
-<h3 class="tittle__skill">Logrador</h3>
-<p class="text__skills">siento la necesidad constante de lograr objetivos, hay un fuego interno que me empuja a hacer más, a lograr más.</p>
-<h3 class="tittle__skill">Aprendedor</h3>
-<p class="text__skills">Me encanta aprender. El tema que más me interese será objetivo a lograr, siempre atraído por el proceso de aprender cosas nuevas.</p>
-<h3 class="tittle__skill">Trabajo en equipo</h3>
-<p class="text__skills">Congrandes habilidades de comunicacion y liderazgo</p>
-<h3 class="tittle__skill">Trabajador</h3>
-<p class="text__skills">siempre dispuesto a dar lo mejor de mi</p> -->
 </section>
   
-  <section class="skills">
+<section class="apps">
+<h3 class="title_apps">Temperature Converter</h3>
+<a class="app__link" href="https://temperature-converter-87af30.netlify.app/" target="_blank"><img class="img_apps" src="./assets/img/temperature-img.PNG" alt="Image-of-temperature-converter"></a>
+<p class="text_apps">Con esta aplicacion puedes calcular y convertir todas las temperaturas de una unidad a otra</p>
+<br><br>
+<h3 class="title_apps">Pressure Converter</h3>
+<a class="app__link" href="https://pressure-converter-b310d1.netlify.app/" target="_blank"><img class="img_apps" src="./assets/img/presion-img.PNG" alt="Image-of-Pressure-Converter"></a>
+<p class="text_apps">Con esta aplicacion puedes calcular y convertir todas las Presiones de una unidad a otra</p>
+<br><br>
+<h3 class="title_apps">Academlo Blog</h3>
+<a class="app__link" href="https://miblog-freud.netlify.app/" target="_blank"><img class="img_apps" src="./assets/img/Blog-img.PNG" alt="Image-academlo-blog"></a>
+<p class="text_apps">Visitita mi blog</p>
+</section>
 
-  </section>
+<div class="form_container">
+  <form class="form">
+    <p class="title">Register </p>
+    <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Firstname</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Lastname</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input class="input" type="email" placeholder="" required="">
+        <span>Email</span>
+    </label> 
+        
+    <label>
+        <input class="input" type="password" placeholder="" required="">
+        <span>Password</span>
+    </label>
+    <label>
+        <input class="input" type="password" placeholder="" required="">
+        <span>Confirm password</span>
+    </label>
+    <button class="submit">Submit</button>
+    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+</form>
+</div>
 
 
     </main>
-    <footer>
+    <br><br>
 
-    </footer>
-    <script src="./assets/js/main.js"></script>
+      <footer class="footer section">
+      <div class="social_media">
+        <img src="./assets/img/facebook-circle-logo-24.png" alt="facebook" class="social-img">
+        <img src="./assets/img/bxl-linkedin.svg" alt="linkedin" class="social-img">
+        <img src="./assets/img/bxl-github.svg" alt="github" class="social-img">
+        <img src="./assets/img/bxl-whatsapp-square.svg" alt="Whatsapp" class="social-img">
+      </div>
+      <div class="info_contact">
+<ul class="list_container_contact">
+  <li class="list_contact">Name</li>
+  <li class="list_contact">Email</li>
+  <li class="list_contact">Whatsapp<li>
+</ul>
+      </div>
+      </footer>
+    
+      <script src="./assets/js/main.js"></script>
 </body>
 </html>
