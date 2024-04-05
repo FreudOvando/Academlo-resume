@@ -73,7 +73,8 @@
   </section>
 <br><br>
   
-<section class="skills">  
+<section class="skills">
+  <h2 class="tittle_section">Habilidades</h2>  
       <div class="skill">
         <h3 class="tittle__skill">Competitivo</h3>
         <p class="text__skills">Me gustan los retos, no me rindo y me gusta superarme constantemente.</p>
@@ -97,6 +98,7 @@
 </section>
   
 <section class="apps">
+<h2 class="tittle_section">Apps</h2>
 <h3 class="title_apps">Temperature Converter</h3>
 <a class="app__link" href="https://temperature-converter-87af30.netlify.app/" target="_blank"><img class="img_apps" src="./assets/img/temperature-img.PNG" alt="Image-of-temperature-converter"></a>
 <p class="text_apps">Con esta aplicacion puedes calcular y convertir todas las temperaturas de una unidad a otra</p>
@@ -112,58 +114,57 @@
 
 <div class="form_container">
   <form class="form">
-    <p class="title">Register </p>
-    <p class="message">Signup now and get full access to our app. </p>
+    <p class="title">Escribe una nota </p>
+    <p class="message"> Estare contento de ver tu comentario</p>
         <div class="flex">
-        <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>Firstname</span>
+        <label for="name">
+            <input id="name" class="input" type="text" placeholder="Juanito Perez Hernandez" required>
+            <span>Nombre completo</span>
         </label>
 
-        <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>Lastname</span>
+        <label for="number">
+            <input id="number" class="input" type="number" placeholder="(+52)9933542312" required>
+            <span>Number</span>
         </label>
     </div>  
             
-    <label>
-        <input class="input" type="email" placeholder="" required="">
+    <label for="email">
+        <input id="email" class="input" type="email" placeholder="name@example.com" required>
         <span>Email</span>
     </label> 
         
-    <label>
-        <input class="input" type="password" placeholder="" required="">
-        <span>Password</span>
+    <label for="text_area">
+      <textarea id="text_area" maxlength="255" placeholder="Escribe tu comentario aquí..." required></textarea>
     </label>
-    <label>
-        <input class="input" type="password" placeholder="" required="">
-        <span>Confirm password</span>
-    </label>
-    <button class="submit">Submit</button>
-    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+    
+    <button class="submit">Enviar</button>
+    <p class="signin"><a href="#">gracias por tus comentarios</a></p>
 </form>
 </div>
+</main>
+<br><br>
 
-
-    </main>
-    <br><br>
-
-      <footer class="footer section">
-      <div class="social_media">
+      <footer class="footer_section">
+      
+        <div class="social_media">
         <img src="./assets/img/facebook-circle-logo-24.png" alt="facebook" class="social-img">
         <img src="./assets/img/bxl-linkedin.svg" alt="linkedin" class="social-img">
         <img src="./assets/img/bxl-github.svg" alt="github" class="social-img">
         <img src="./assets/img/bxl-whatsapp-square.svg" alt="Whatsapp" class="social-img">
       </div>
+
       <div class="info_contact">
-<ul class="list_container_contact">
-  <li class="list_contact">Name</li>
-  <li class="list_contact">Email</li>
-  <li class="list_contact">Whatsapp<li>
-</ul>
-      </div>
-      </footer>
-    
+     
+      <ul class="list_container_contact">
+      <li class="list_contact">Name</li>
+      <li class="list_contact">Email</li>
+      <li class="list_contact">Whatsapp<li>
+      </ul>
+      
+    </div>
+      
+    </footer>
+
       <script src="./assets/js/main.js"></script>
 </body>
 </html>
