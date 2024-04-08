@@ -7,7 +7,7 @@ console.log(darkMode.value);
 })
 
 
-const texto = "Hola mi nombre es Freud Ovando y soy full Stack Developer";
+const texto = "Hi, my name is Freud Ovando and I am full stack developer";
 
 let index = 0;
 
@@ -24,6 +24,8 @@ function escribirTexto() {
 }
 
 let intervalo = setInterval(escribirTexto, 100);
+
+
 
 
 

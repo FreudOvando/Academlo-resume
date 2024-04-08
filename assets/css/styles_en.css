@@ -46,8 +46,6 @@ body{
   
     /* Animation */
     animation: move 4s linear infinite;
-
-    
   }
   
   @keyframes move {
