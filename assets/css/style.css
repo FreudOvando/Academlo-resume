@@ -5,7 +5,7 @@
 }
 
 html{
-background-color: var(--bg-one);
+background-color: var(--bg-two);
 display: flex;
 flex-wrap: wrap;
 }
@@ -21,6 +21,11 @@ body{
   color: black;
   margin-top: 10px;
 }
+.dark-mode{
+  background-color: #000;
+  color: #227e00;
+}
+
 
 :root{
   /* roboto mono */
@@ -29,9 +34,9 @@ body{
   --size-of-icon: 1.4em;
   --slider-offset: 0.3em;
 
+
   --bg-one: 
-    /* Dark mode colors and gradient */
-    background: #121212; /* Fallback for browsers that don't support gradients */
+    background: #121212;
     background: linear-gradient(
       135deg,
       #121212 25%,
@@ -47,8 +52,7 @@ body{
     /* Animation */
     animation: move 4s linear infinite;
 
-    
-  }
+}
   
   @keyframes move {
     0% {
@@ -94,11 +98,6 @@ br {
   transition: transform 0.5s ease; /* Transición suave */
 }
 
-.img_navbar_logo:hover {
-  
-transform: rotate(180deg);
-transition: 0.005s;
-}
 
 .header{
   display: flex;
@@ -107,6 +106,9 @@ transition: 0.005s;
   align-items: center;
   height: auto;
   flex-direction: row;
+  .btn_header{
+   display:none
+  }
   
 
   .navbar__menu{
@@ -135,7 +137,7 @@ transition: 0.005s;
     
 
     .navbar__link{
-    color: #000;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     width: auto;
     height: auto;
@@ -146,6 +148,17 @@ transition: 0.005s;
     font-family: sans-serif;
   justify-content: space-around;
   align-items: center;
+  transition: 1s;
+    }
+
+  .navbar__link:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 1s;
+    }
+
 
     .img_navbar_logo{
     width: 5rem;
@@ -163,8 +176,6 @@ transition: 0.005s;
     color: #272787;
     transition: 1s ease-in-out;
   }
-
-}
 
 }
 
@@ -202,7 +213,7 @@ transition: 0.005s;
   right: 0;
   bottom: 0;
   background-color: #888;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 30px;
 }
 
@@ -255,11 +266,17 @@ input:checked + .slider:before {
   
 }
 
+.img-profile{
+  border-radius: 50px;
+  border: #000 solid transparent;
+}
+
 .profile{
 display: flex;
 flex-direction: column;
 align-items: center;
 flex-wrap: wrap;
+
 
  
   .profile__programs{
@@ -275,7 +292,7 @@ flex-wrap: wrap;
     display: none;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap; 
+      
     }
     .programs__img:hover{
       width: 5.5rem;
@@ -359,8 +376,7 @@ flex-wrap: wrap;
 .skill:hover .text__skills {
   display: flex;
   height: auto;
-  transition:height 2s ease;
-  background-color: #757575;
+  transition: height 2s ease;
   font-weight: 400;
 
 }

@@ -1,9 +1,9 @@
-// import 'boxicons'
+
 
 const darkMode = document.getElementById('input-dark-mode');
 
-darkMode.addEventListener('click', () => {
-console.log(darkMode.value);    
+darkMode.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode'); 
 })
 
 
